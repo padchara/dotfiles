@@ -5,7 +5,9 @@ mkdir -p ~/.config/nvim/lua
 
 
 # link wholesales
-for f in `find . -regex ".*\.vim$\|.*\.lua$"`; do
-  rm -rf ~/.config/nvim$f
+# for f in `find . -regex ".*\.vim$"`; do
+# for f in `find .*\.vim$" | sed 's|^./||'`; do
+for f in `find . -regex ".*\.vim$" | sed -e 's,^\./,,'`; do
+  rm -rf ~/.config/nvim/$f
   ln -s ~/code/dotfiles/$f ~/.config/nvim/$f
 done
