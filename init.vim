@@ -10,6 +10,21 @@ Plug 'gruvbox-community/gruvbox'
 
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+
+" Comment
+Plug 'tpope/vim-commentary'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" File Explorer
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
 call plug#end()
 
 colorscheme gruvbox
