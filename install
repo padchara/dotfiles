@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+rm -rf ~/.config/nvim
+
+# mkdir -p ~/.config/nvim/plugin
+mkdir -p ~/.config/nvim/after/plugin
+mkdir -p ~/.config/nvim/lua
+
+
+cp init.vim ~/.config/nvim/init.vim
+cp -R plugin ~/.config/nvim/
+
+# link wholesales
+# for f in `find . -regex ".*\.vim$"`; do
+# for f in `find .*\.vim$" | sed 's|^./||'`; do
+# for f in `find . -regex ".*\.vim$" | sed -e 's,^\./,,'`; do
+#  rm -rf ~/.config/nvim/$f
+#  ln -s ~/code/dotfiles/$f ~/.config/nvim/$f
+# done
+
+
