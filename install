@@ -16,5 +16,3 @@ cp -R plugin ~/.config/nvim/
 #  rm -rf ~/.config/nvim/$f
 #  ln -s ~/code/dotfiles/$f ~/.config/nvim/$f
 # done
-
-#Test
